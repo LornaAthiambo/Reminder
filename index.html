@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reminder</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2 style="text-align: center;">TODO List</h2>
+        <label for="title">Activity Done :</label>
+        <input type="text" id="title" />
+        <br>
+        <br>
+        <label for="description">Description:</label>
+        <input type="text" id="description" />
+        <br>
+        <br>
+        <label for="date">DATE :</label>
+        <input type="date" id="date" />
+        <br>
+        <br>
+        <label for="time">TIME :</label>
+        <input type="time" id="time"/>
+        <br>
+        <br>
+        <button style="width: 100%" onclick="scheduleReminder();">Set Reminder</button>
+        
+    </div>
+    <audio src="notification.mp3" id="notificationSound"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+
